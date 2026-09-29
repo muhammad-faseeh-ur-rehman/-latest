@@ -11,7 +11,6 @@ function App() {
       <Count />
       <Todo />
       <Password />
-
       <main className="flex-1">
         <Hero />
 
@@ -21,7 +20,6 @@ function App() {
           </h2>
         </section>
       </main>
-
       <Footer />
     </div>
   );
