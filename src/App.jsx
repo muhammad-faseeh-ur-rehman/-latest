@@ -2,16 +2,16 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer.jsx";
 import Count from "./components/Count";
-import Password from "./components/Password"
-import Todo from "./components/Todo"
+import Password from "./components/Password";
+import Todo from "./components/Todo";
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-
       <Navbar />
-      <Count/>
-      <Todo/>
-      <Password/>
+      <Count />
+      <Todo />
+      <Password />
+
       <main className="flex-1">
         <Hero />
 
@@ -23,9 +23,7 @@ function App() {
       </main>
 
       <Footer />
-
     </div>
   );
 }
-
 export default App;
