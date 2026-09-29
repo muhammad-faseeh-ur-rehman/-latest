@@ -1,18 +1,18 @@
-// import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
-// import Footer from "./components/Footer.jsx";
-// import Count from "./components/Count";
-// import Password from "./components/Password"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer.jsx";
+import Count from "./components/Count";
+import Password from "./components/Password"
 import Todo from "./components/Todo"
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
 
-      {/* <Navbar /> */}
-      {/* <Count/> */}
+      <Navbar />
+      <Count/>
       <Todo/>
-      {/* <Password/> */}
-      {/* <main className="flex-1">
+      <Password/>
+      <main className="flex-1">
         <Hero />
 
         <section className="py-20 px-6 text-center">
@@ -20,9 +20,9 @@ function App() {
             Welcome to My Website
           </h2>
         </section>
-      </main> */}
+      </main>
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );
