@@ -7,7 +7,7 @@ const Password = () => {
     <div>
       <input
         type={showPassword ? "text" : "password"}
-        placeholder="Enter password"
+        placeholder="Enter your password"
       />
 
       <button onClick={() => setShowPassword(!showPassword)}>
