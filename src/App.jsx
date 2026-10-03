@@ -87,9 +87,7 @@ function App() {
             placeholder="Enter your name"
           />
         </div>
-
         <br />
-
         <div>
           <label>Email</label>
           <br />
@@ -101,9 +99,7 @@ function App() {
             placeholder="Enter your email"
           />
         </div>
-
         <br />
-
         <div>
           <label>Password</label>
           <br />
@@ -115,12 +111,9 @@ function App() {
             placeholder="Enter your password"
           />
         </div>
-
         <br />
-
         <button type="submit">Submit</button>
       </form>
-
       <hr />
 
       <h2>Saved Users</h2>
