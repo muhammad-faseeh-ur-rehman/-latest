@@ -40,7 +40,6 @@ function App() {
     return savedUsers ? JSON.parse(savedUsers) : [];
   });
 
-  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -50,7 +49,6 @@ function App() {
     });
   };
 
-  // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -70,10 +68,8 @@ function App() {
 
     setUsers(updatedUsers);
 
-    // Save to localStorage
     localStorage.setItem("users", JSON.stringify(updatedUsers));
 
-    // Clear form
     setFormData({
       name: "",
       email: "",
