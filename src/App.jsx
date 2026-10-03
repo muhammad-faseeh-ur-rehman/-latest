@@ -115,9 +115,7 @@ function App() {
         <button type="submit">Submit</button>
       </form>
       <hr />
-
       <h2>Saved Users</h2>
-
       {users.length === 0 ? (
         <p>No users found.</p>
       ) : (
@@ -133,7 +131,6 @@ function App() {
             <h3>{user.name}</h3>
             <p>{user.email}</p>
             <p>{user.password}</p>
-
             <button onClick={() => handleDelete(user.id)}>Delete</button>
           </div>
         ))
@@ -141,5 +138,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
