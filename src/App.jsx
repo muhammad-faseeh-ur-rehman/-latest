@@ -79,7 +79,6 @@ function App() {
     alert("User added successfully!");
   };
 
-  // Delete user
   const handleDelete = (id) => {
     const updatedUsers = users.filter((user) => user.id !== id);
 
@@ -92,7 +91,6 @@ function App() {
     <div style={{ padding: "30px" }}>
       <h1>React Form + Local Storage</h1>
 
-      {/* Form */}
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name</label>
@@ -141,7 +139,6 @@ function App() {
 
       <hr />
 
-      {/* Users */}
       <h2>Saved Users</h2>
 
       {users.length === 0 ? (
