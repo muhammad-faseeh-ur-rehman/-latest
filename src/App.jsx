@@ -51,26 +51,20 @@ function App() {
       alert("Please fill all fields");
       return;
     }
-
     const newUser = {
       id: Date.now(),
       name: formData.name,
       email: formData.email,
       password: formData.password,
     };
-
     const updatedUsers = [...users, newUser];
-
     setUsers(updatedUsers);
-
     localStorage.setItem("users", JSON.stringify(updatedUsers));
-
     setFormData({
       name: "",
       email: "",
       password: "",
     });
-
     alert("User added successfully!");
   };
 
