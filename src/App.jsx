@@ -67,19 +67,14 @@ function App() {
     });
     alert("User added successfully!");
   };
-
   const handleDelete = (id) => {
     const updatedUsers = users.filter((user) => user.id !== id);
-
     setUsers(updatedUsers);
-
     localStorage.setItem("users", JSON.stringify(updatedUsers));
   };
-
   return (
     <div style={{ padding: "30px" }}>
       <h1>React Form + Local Storage</h1>
-
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name</label>
