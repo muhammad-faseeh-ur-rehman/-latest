@@ -27,28 +27,23 @@
 // export default App;
 
 import { useState } from "react";
-
 function App() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
   });
-
   const [users, setUsers] = useState(() => {
     const savedUsers = localStorage.getItem("users");
     return savedUsers ? JSON.parse(savedUsers) : [];
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData({
       ...formData,
       [name]: value,
     });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
