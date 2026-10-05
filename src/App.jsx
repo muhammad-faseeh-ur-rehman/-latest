@@ -33,6 +33,7 @@ function App() {
     name: "",
     email: "",
     password: "",
+    input:"",
   });
   const [users, setUsers] = useState(() => {
     const savedUsers = localStorage.getItem("users");
