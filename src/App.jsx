@@ -27,6 +27,7 @@
 // export default App;
 
 import { useState } from "react";
+import User from "./components/User";
 function App() {
   const [formData, setFormData] = useState({
     name: "",
@@ -135,6 +136,13 @@ function App() {
           </div>
         ))
       )}
+
+      <User name="John Doe" />
+      <User name="John Doe" />
+      <User name="ali" />
+      <User name="John Doe" city="New York" />
+
+      
     </div>
   );
 }
