@@ -25,12 +25,12 @@
 
 const Props = (props) => {
   return (
-    <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center">
+    <div className="min-h-screen bg-gray-100 p-6 gap-5 justify-between flex flex-row items-center">
       {props.user.map((value, index) => {
         return (
           <div
             key={index}
-            className="w-40 flex flex-col bg-white p-5 mb-4 items-center rounded-lg shadow-md"
+            className="w-70 flex flex-col bg-white p-5 mb-4 items-center rounded-lg shadow-md"
           >
             <div className=" flex flex-col ">
               <h1 className="text-xl font-bold text-gray-800 mb-2">

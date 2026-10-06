@@ -174,6 +174,18 @@ const App = () => {
       height: 5.1,
       city: "SDK",
     },
+    {
+      name: "Bilal",
+      age: 50,
+      height: 5.1,
+      city: "SDK",
+    },
+    {
+      name: "Fakhar",
+      age: 50,
+      height: 5.1,
+      city: "SDK",
+    },
   ];
   return (
     <div>
