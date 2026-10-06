@@ -30,7 +30,7 @@ const Props = (props) => {
         return (
           <div
             key={index}
-            className="w-80 bg-white p-5 mb-4 rounded-lg shadow-md"
+            className="w-80 flex bg-white p-5 mb-4 rounded-lg shadow-md"
           >
             <h1 className="text-xl font-bold text-gray-800 mb-2">
               {value.name}
