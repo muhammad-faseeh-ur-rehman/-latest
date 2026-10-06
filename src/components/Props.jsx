@@ -22,7 +22,6 @@
 // };
 
 // export default Props;
-import React from "react";
 
 const Props = (props) => {
   return (
