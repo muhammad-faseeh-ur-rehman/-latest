@@ -30,15 +30,17 @@ const Props = (props) => {
         return (
           <div
             key={index}
-            className="w-80 flex bg-white p-5 mb-4 rounded-lg shadow-md"
+            className="w-80 flex bg-white p-5 mb-4 items-center rounded-lg shadow-md"
           >
-            <h1 className="text-xl font-bold text-gray-800 mb-2">
-              {value.name}
-            </h1>
+            <div className=" flex flex-col ">
+              <h1 className="text-xl font-bold text-gray-800 mb-2">
+                {value.name}
+              </h1>
 
-            <p className="text-gray-600">Age: {value.age}</p>
-            <p className="text-gray-600">Height: {value.height}</p>
-            <p className="text-gray-600">City: {value.city}</p>
+              <p className="text-gray-600">Age: {value.age}</p>
+              <p className="text-gray-600">Height: {value.height}</p>
+              <p className="text-gray-600">City: {value.city}</p>
+            </div>
           </div>
         );
       })}
