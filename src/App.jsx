@@ -143,13 +143,13 @@
 // }
 // export default App;
 
-import Props from "./components/Props.jsx";
-const App = () => {
-  return (
-    <div>
-      <Props name="Faseeh" age={22} height={5.8} />
-    </div>
-  )
-}
+// import Props from "./components/Props.jsx";
+// const App = () => {
+//   return (
+//     <div>
+//       <Props name="Faseeh" age={22} height={5.8} />
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
