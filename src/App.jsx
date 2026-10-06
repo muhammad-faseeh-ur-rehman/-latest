@@ -153,3 +153,27 @@
 // }
 
 // export default App
+import Props from "./components/Props.jsx";
+const App = () => {
+  const user = [
+    {
+      name: " Faseeh",
+      age: 22,
+      height: 5.8,
+      city: "SDK",
+    },
+    {
+      name: " Hammad",
+      age: 50,
+      height: 5.1,
+      city: "SDK",
+    },
+  ];
+  return (
+    <div>
+      <Props user={user} />
+    </div>
+  );
+};
+
+export default App;
