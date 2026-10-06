@@ -146,7 +146,9 @@
 import Props from "./components/Props.jsx";
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Props />
+    </div>
   )
 }
 

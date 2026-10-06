@@ -1,8 +1,9 @@
-
-const Props = () => {
+const Props = (props) => {
   return (
-    <div>props</div>
-  )
-}
+    <div>
+      <h1> {props.name} </h1>
+    </div>
+  );
+};
 
-export default Props
+export default Props;
