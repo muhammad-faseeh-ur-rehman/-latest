@@ -1,8 +1,8 @@
 
-const props = () => {
+const Props = () => {
   return (
     <div>props</div>
   )
 }
 
-export default props
+export default Props

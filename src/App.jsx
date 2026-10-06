@@ -143,3 +143,11 @@
 // }
 // export default App;
 
+import Props from "./components/Props.jsx";
+const App = () => {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
