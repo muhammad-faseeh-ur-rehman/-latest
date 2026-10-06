@@ -168,6 +168,12 @@ const App = () => {
       height: 5.1,
       city: "SDK",
     },
+    {
+      name: " Ahmad",
+      age: 50,
+      height: 5.1,
+      city: "SDK",
+    },
   ];
   return (
     <div>

@@ -28,7 +28,10 @@ const Props = (props) => {
     <div>
       {props.user.map((value, index) => {
         return (
-          <div key={index}>
+          <div
+            key={index}
+            className="w-full bg-gray-200 p-4 rounded-lg shadow-md mb-4  "
+          >
             <h1>{value.name}</h1>
             <p>{value.age}</p>
             <p>{value.height}</p>
