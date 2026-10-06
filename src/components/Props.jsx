@@ -22,20 +22,23 @@
 // };
 
 // export default Props;
-import React from 'react'
+import React from "react";
 
 const Props = (props) => {
   return (
     <div>
-      {props.user.map((value,index) => {
-        return(
+      {props.user.map((value, index) => {
+        return (
           <div key={index}>
             <h1>{value.name}</h1>
+            <p>{value.age}</p>
+            <p>{value.height}</p>
+            <p>{value.city}</p>
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
+  );
+};
 
-export default Props
+export default Props;
