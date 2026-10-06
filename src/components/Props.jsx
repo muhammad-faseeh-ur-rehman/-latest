@@ -10,15 +10,32 @@
 
 // export default Props;
 
+// const Props = (props) => {
+//   return (
+//     <div>
+//       <h1> {props.user[1].name} </h1>
+//       <p> {props.user[1].age} </p>
+//       <p> {props.user[1].height} </p>
+//       <h1> {props.user[1].city} </h1>
+//     </div>
+//   );
+// };
+
+// export default Props;
+import React from 'react'
+
 const Props = (props) => {
   return (
     <div>
-      <h1> {props.user[1].name} </h1>
-      <p> {props.user[1].age} </p>
-      <p> {props.user[1].height} </p>
-      <h1> {props.user[1].city} </h1>
+      {props.user.map((value,index) => {
+        return(
+          <div key={index}>
+            <h1>{value.name}</h1>
+          </div>
+        )
+      })}
     </div>
-  );
-};
+  )
+}
 
-export default Props;
+export default Props
