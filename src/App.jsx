@@ -142,12 +142,4 @@
 //   );
 // }
 // export default App;
-import Props from "./components/Props.jsx";
-function App() {
-  return (
-    <div>
-      <Props name="john doe" age={23} height={5.8} city= "New York" />
-    </div>
-  );
-}
-export default App;
+
