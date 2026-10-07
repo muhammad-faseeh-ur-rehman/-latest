@@ -153,110 +153,106 @@
 // }
 
 // export default App
-// import { Products } from "./components/Products.jsx";
-// import Carts from "./components/Carts.jsx";
+import Carts from "./components/Carts.jsx";
 // import Props from "./components/Props.jsx";
-// import Login from "./Pages/Login.jsx";
-// const App = () => {
-//   // const user = [
-//   //   {
-//   //     name: " Faseeh",
-//   //     age: 22,
-//   //     height: 5.8,
-//   //     city: "SDK",
-//   //   },
-//   //   {
-//   //     name: " Hammad",
-//   //     age: 50,
-//   //     height: 5.1,
-//   //     city: "SDK",
-//   //   },
-//   //   {
-//   //     name: " Ahmad",
-//   //     age: 50,
-//   //     height: 5.1,
-//   //     city: "SDK",
-//   //   },
-//   //   {
-//   //     name: "Bilal",
-//   //     age: 50,
-//   //     height: 5.1,
-//   //     city: "SDK",
-//   //   },
-//   //   {
-//   //     name: "Fakhar",
-//   //     age: 50,
-//   //     height: 5.1,
-//   //     city: "SDK",
-//   //   },
-//   // ];
-//   return (
-//     <div>
-//       {/* <Props user={user} /> */}
-//       {/* <Products /> */}
-//       {/* <Carts /> */}
-//       <Login/>
-//       {/* /form with all filed /all types of input with usestatee   */}
-//     </div>
-//   );
-// };
-
-// export default App;
-// 👇 authentication here
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
-import Users from "./pages/Users";
-import Products from "./pages/Products";
-import Orders from "./pages/Orders";
-
-import ProtectedRoute from "./components/ProtectedRoute";
-
-function App() {
+const App = () => {
+  // const user = [
+  //   {
+  //     name: " Faseeh",
+  //     age: 22,
+  //     height: 5.8,
+  //     city: "SDK",
+  //   },
+  //   {
+  //     name: " Hammad",
+  //     age: 50,
+  //     height: 5.1,
+  //     city: "SDK",
+  //   },
+  //   {
+  //     name: " Ahmad",
+  //     age: 50,
+  //     height: 5.1,
+  //     city: "SDK",
+  //   },
+  //   {
+  //     name: "Bilal",
+  //     age: 50,
+  //     height: 5.1,
+  //     city: "SDK",
+  //   },
+  //   {
+  //     name: "Fakhar",
+  //     age: 50,
+  //     height: 5.1,
+  //     city: "SDK",
+  //   },
+  // ];
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/dashboard"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/users"
-          element={
-            <ProtectedRoute>
-              <Users />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/products"
-          element={
-            <ProtectedRoute>
-              <Products />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/orders"
-          element={
-            <ProtectedRoute>
-              <Orders />
-            </ProtectedRoute>
-          }
-        />
-        <Route path="*" element={<Navigate to="/login" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      {/* <Props user={user} /> */}
+      <Carts />
+      {/* /form with all filed /all types of input with usestatee   */}
+    </div>
   );
-}
+};
 
 export default App;
+// 👇 authentication here
+// import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// import Login from "./pages/Login";
+// import Dashboard from "./pages/Dashboard";
+// import Users from "./pages/Users";
+// import Products from "./pages/Products";
+// import Orders from "./pages/Orders";
+
+// import ProtectedRoute from "./components/ProtectedRoute";
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Navigate to="/login" replace />} />
+//         <Route path="/login" element={<Login />} />
+//         <Route
+//           path="/dashboard"
+//           element={
+//             <ProtectedRoute>
+//               <Dashboard />
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route
+//           path="/users"
+//           element={
+//             <ProtectedRoute>
+//               <Users />
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route
+//           path="/products"
+//           element={
+//             <ProtectedRoute>
+//               <Products />
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route
+//           path="/orders"
+//           element={
+//             <ProtectedRoute>
+//               <Orders />
+//             </ProtectedRoute>
+//           }
+//         />
+//         <Route path="*" element={<Navigate to="/login" replace />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
 // form ahndling here
 // import FormHandling from "./components/FormHandling.jsx";
 // const App = () => {
