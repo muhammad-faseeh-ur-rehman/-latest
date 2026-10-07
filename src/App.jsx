@@ -13,7 +13,6 @@
 //       <Password />
 //       <main className="flex-1">
 //         <Hero />
-
 //         <section className="py-20 px-6 text-center">
 //           <h2 className="text-3xl font-bold">
 //             Welcome to My Website
@@ -141,7 +140,6 @@
 //   );
 // }
 // export default App;
-
 // import Props from "./components/Props.jsx";
 // const App = () => {
 //   return (
@@ -150,7 +148,6 @@
 //     </div>
 //   )
 // }
-
 // export default App
 import Carts from "./components/Carts.jsx";
 // import Props from "./components/Props.jsx";
