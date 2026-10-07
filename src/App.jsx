@@ -203,81 +203,81 @@
 
 // export default App;
 // 👇 authentication here
-// import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// import Login from "./pages/Login";
-// import Dashboard from "./pages/Dashboard";
-// import Users from "./pages/Users";
-// import Products from "./pages/Products";
-// import Orders from "./pages/Orders";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Users from "./pages/Users";
+import Products from "./pages/Products";
+import Orders from "./pages/Orders";
 
-// import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute";
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         {/* Default */}
-//         <Route path="/" element={<Navigate to="/login" replace />} />
-
-//         {/* Login */}
-//         <Route path="/login" element={<Login />} />
-
-//         {/* Protected Routes */}
-//         <Route
-//           path="/dashboard"
-//           element={
-//             <ProtectedRoute>
-//               <Dashboard />
-//             </ProtectedRoute>
-//           }
-//         />
-
-//         <Route
-//           path="/users"
-//           element={
-//             <ProtectedRoute>
-//               <Users />
-//             </ProtectedRoute>
-//           }
-//         />
-
-//         <Route
-//           path="/products"
-//           element={
-//             <ProtectedRoute>
-//               <Products />
-//             </ProtectedRoute>
-//           }
-//         />
-
-//         <Route
-//           path="/orders"
-//           element={
-//             <ProtectedRoute>
-//               <Orders />
-//             </ProtectedRoute>
-//           }
-//         />
-
-//         {/* Unknown URL */}
-//         <Route path="*" element={<Navigate to="/login" replace />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-// form ahndling here
-import FormHandling from "./components/FormHandling.jsx";
-const App = () => {
+function App() {
   return (
-    <div>
-      <FormHandling/>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        {/* Default */}
+        <Route path="/" element={<Navigate to="/login" replace />} />
+
+        {/* Login */}
+        <Route path="/login" element={<Login />} />
+
+        {/* Protected Routes */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/users"
+          element={
+            <ProtectedRoute>
+              <Users />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/products"
+          element={
+            <ProtectedRoute>
+              <Products />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/orders"
+          element={
+            <ProtectedRoute>
+              <Orders />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Unknown URL */}
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
+// form ahndling here
+// import FormHandling from "./components/FormHandling.jsx";
+// const App = () => {
+//   return (
+//     <div>
+//       <FormHandling/>
+//     </div>
+//   )
+// }
+
+// export default App
 // posts here
 // import Posts from "./components/Posts.jsx";
 // const App = () => {
