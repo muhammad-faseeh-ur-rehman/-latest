@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 function Posts() {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoading(false);
+    setLoading(true);
     fetch("https://dummyjson.com/posts")
       .then((res) => res.json())
       .then((data) => {
