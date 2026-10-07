@@ -216,13 +216,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Default */}
         <Route path="/" element={<Navigate to="/login" replace />} />
-
-        {/* Login */}
         <Route path="/login" element={<Login />} />
-
-        {/* Protected Routes */}
         <Route
           path="/dashboard"
           element={
@@ -231,7 +226,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/users"
           element={
@@ -240,7 +234,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/products"
           element={
@@ -249,7 +242,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/orders"
           element={
@@ -258,8 +250,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* Unknown URL */}
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
