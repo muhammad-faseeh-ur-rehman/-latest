@@ -268,24 +268,24 @@
 
 // export default App;
 // form ahndling here
-// import FormHandling from "./components/FormHandling.jsx";
-// const App = () => {
-//   return (
-//     <div>
-//       <FormHandling/>
-//     </div>
-//   )
-// }
-
-// export default App
-// posts here
-import Posts from "./components/Posts.jsx";
+import FormHandling from "./components/FormHandling.jsx";
 const App = () => {
   return (
     <div>
-      <Posts/>
+      <FormHandling/>
     </div>
   )
 }
 
 export default App
+// posts here
+// import Posts from "./components/Posts.jsx";
+// const App = () => {
+//   return (
+//     <div>
+//       <Posts/>
+//     </div>
+//   )
+// }
+
+// export default App
