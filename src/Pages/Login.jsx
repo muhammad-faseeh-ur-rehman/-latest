@@ -40,10 +40,8 @@ const Login = () => {
         return;
       }
 
-      // Save user data
       localStorage.setItem("user", JSON.stringify(data));
 
-      // Go to dashboard
       navigate("/dashboard");
 
     } catch (error) {
