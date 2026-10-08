@@ -73,7 +73,6 @@ const Login = () => {
 
         <form onSubmit={handleLogin}>
 
-          {/* Username */}
           <div className="mb-4">
 
             <label className="block mb-2 font-medium">
@@ -91,7 +90,6 @@ const Login = () => {
 
           </div>
 
-          {/* Password */}
           <div className="mb-6">
 
             <label className="block mb-2 font-medium">
@@ -109,7 +107,6 @@ const Login = () => {
 
           </div>
 
-          {/* Login button */}
           <button
             type="submit"
             disabled={loading}
@@ -120,7 +117,6 @@ const Login = () => {
 
         </form>
 
-        {/* Test account */}
         <div className="mt-6 p-4 bg-gray-100 rounded-lg">
 
           <p className="font-semibold mb-2">
