@@ -39,16 +39,12 @@ const Login = () => {
         setLoading(false);
         return;
       }
-
       localStorage.setItem("user", JSON.stringify(data));
-
       navigate("/dashboard");
-
     } catch (error) {
       console.error(error);
       setError("Something went wrong. Please try again.");
     }
-
     setLoading(false);
   };
 
