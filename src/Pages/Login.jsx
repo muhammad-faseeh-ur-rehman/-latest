@@ -62,15 +62,11 @@ const Login = () => {
             {error}
           </div>
         )}
-
         <form onSubmit={handleLogin}>
-
           <div className="mb-4">
-
             <label className="block mb-2 font-medium">
               Username
             </label>
-
             <input
               type="text"
               placeholder="Enter username"
