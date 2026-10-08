@@ -75,15 +75,11 @@ const Login = () => {
               className="w-full border border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500"
               required
             />
-
           </div>
-
           <div className="mb-6">
-
             <label className="block mb-2 font-medium">
               Password
             </label>
-
             <input
               type="password"
               placeholder="Enter password"
@@ -92,9 +88,7 @@ const Login = () => {
               className="w-full border border-gray-300 rounded-lg p-3 outline-none focus:border-blue-500"
               required
             />
-
           </div>
-
           <button
             type="submit"
             disabled={loading}
